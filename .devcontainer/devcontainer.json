@@ -1,7 +1,14 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3",
   "features": {
-    "ghcr.io/devcontainers/features/powershell:1": {}
+    // Install the Azure CLI feature from the official registry
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest"
+    },
+    // Install the PowerShell feature from the official registry
+    "ghcr.io/devcontainers/features/powershell:1": {
+      "version": "latest"
+    }
   },
   "customizations": {
     "vscode": {
